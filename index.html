@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Email System</h1>
+        <label for="template">Select Template:</label>
+        <select id="template">
+            <option value="welcome">Welcome Package</option>
+            <option value="thank_you">Thank You Email</option>
+        </select>
+        
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" placeholder="Enter customer name">
+        
+        <label for="customerEmail">Customer Email:</label>
+        <input type="email" id="customerEmail" placeholder="Enter customer email">
+        
+        <label for="attachments">Attachments:</label>
+        <input type="file" id="attachments" multiple>
+        
+        <h2>Email Preview</h2>
+        <div id="preview"></div>
+        
+        <button id="sendEmail">Send Email</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
